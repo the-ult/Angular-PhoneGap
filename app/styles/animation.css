@@ -1,0 +1,21 @@
+/** ###########################################################################################
+**  #   Animations
+**  ########################################################################################### **/
+#action-bar img.drawer-slide-left-add,
+#action-bar img.drawer-slide-left-remove {
+  -webkit-transition: 0.4s linear all;
+  -moz-transition: 0.4s linear all;
+  -o-transition: 0.4s linear all;
+  transition: 0.4s linear all;
+}
+
+#action-bar img.drawer-slide-left-add,
+#action-bar img.drawer-slide-left-remove.drawer-slide-left-remove-active {
+  left: 0px;
+}
+
+#action-bar img.drawer-slide-left,
+#action-bar img.drawer-slide-left-remove,
+#action-bar img.drawer-slide-left-add.drawer-slide-left-add-active {
+  left: -8px;
+}
