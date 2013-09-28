@@ -1,6 +1,6 @@
 {
-  "name": "wwoe",
-  "version": "0.0.0",
+  "name": "phone",
+  "version": "0.0.1",
   "dependencies": {
     "grunt-pagespeed": "0.0.6"
   },

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('wwoeApp')
+angular.module('phoneApp')
   .controller('MainCtrl', function () {
     this.showNavDrawer = false;
   });

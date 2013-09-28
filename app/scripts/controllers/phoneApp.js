@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('wwoeApp')
+angular.module('phoneApp')
   .controller('PhoneAppCtrl', function () {
 //    this.showLeftAside = false;
 //
