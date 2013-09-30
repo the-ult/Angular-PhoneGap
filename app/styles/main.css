@@ -10,6 +10,10 @@ body {
 /** ###########################################################################################
 **  #   Bootstrap 3: override
 **  ########################################################################################### **/
+/*
+  TODO: create new semantic classes in stead of overriding bootstrap
+
+*/
 
 .navbar {
   min-height: 48px;
@@ -57,11 +61,6 @@ body {
   border-radius: 0;
 }
 
-/*.btn.btn-inverse {*/
-/*palette-belize-hole*/
-/*background-color: #2980b9;*/
-/*}*/
-
 /** ###########################################################################################
 **  #   Main Action Bar / Navigation
 **  #   - Action bar is 48dp -> 48px. Fix with media queries
@@ -92,7 +91,8 @@ body {
   /*margin-top: 14px;*/
   height: 20px;
   width: 20px;
-  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);;
 }
 
 /** ###########################################################################################
