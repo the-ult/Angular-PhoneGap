@@ -7,6 +7,24 @@ body {
   /* The html and body elements cannot have any padding or margin. */
 }
 
+/*#header {*/
+/*background: url(medium-density-image.png);*/
+/*}*/
+
+/*@media screen and (-webkit-device-pixel-ratio: 1.5) {*/
+/* CSS for high-density screens */
+/*#header {*/
+/*background: url(high-density-image.png);*/
+/*}*/
+/*}*/
+
+/*@media screen and (-webkit-device-pixel-ratio: 0.75) {*/
+/* CSS for low-density screens */
+/*#header {*/
+/*background: url(low-density-image.png);*/
+/*}*/
+/*}*/
+
 /** ###########################################################################################
 **  #   Bootstrap 3: override
 **  ########################################################################################### **/
@@ -20,9 +38,12 @@ body {
 /** ###########################################################################################
 **  #   Flat-UI override
 **  ########################################################################################### **/
-.navbar .nav > li > a {
+.navbar .nav > li > a,
+.navbar .nav > li > a:hover {
   padding: 0;
   color: #ffffff;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .no-radius {
@@ -31,6 +52,17 @@ body {
   -o-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
+}
+
+.navbar .nav li.dropdown > .dropdown-toggle .caret {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+  border-top-color: #ffffff;
+  margin: 0;
+  margin-top: 18px;
+  border-left-width: 4px;
+  border-right-width: 4px;
+  border-top-width: 6px;
 }
 
 /** ###########################################################################################
@@ -100,6 +132,13 @@ body {
 }
 
 /** ###########################################################################################
+**  #   Top-Bar
+**  ########################################################################################### **/
+#top-bar {
+
+}
+
+/** ###########################################################################################
 **  #   Left menu / Navigation-drawer
 **  ########################################################################################### **/
 
@@ -161,6 +200,9 @@ aside#left-nav-drawer {
 /** ###########################################################################################
 **  #   Bottom Bar / Footer
 **  ########################################################################################### **/
+#bottom-bar {
+
+}
 
 /* Set the fixed height of the footer here */
 footer {
