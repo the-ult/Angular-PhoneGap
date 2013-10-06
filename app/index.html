@@ -27,13 +27,11 @@
           <img class="drawer-icon" ng-src="images/android/ic_drawer.png"
                data-ng-class="{'drawer-slide-left':  main.showNavDrawer}">
         </li>
-        <li>
-          <div class="action-bar-icon" data-ng-click="main.showNavDrawer = !main.showNavDrawer">
-            <img ng-src="images/manta_icon_w_small.png">
-          </div>
+        <li data-ng-click="main.showNavDrawer = !main.showNavDrawer">
+          <img class="app-icon" ng-src="images/manta_icon_w_small.png">
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Ocean Adventures <b class="caret"></b></a>
+        <li class="view-control dropdown">
+        <a href="#" class="dropdown-toggle">Ocean Adventures <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -42,12 +40,10 @@
           </ul>
         </li>
       </ul>
-      <!-- Action Bar Settings-->
+      <!-- Actionbar overflow Settings-->
       <ul class="nav navbar-nav pull-right">
-        <li>
-          <div class="action-bar-icon">
-            <img ng-src="images/android/ic_action_overflow.png">
-          </div>
+        <li class="action-overflow">
+          <img class="action-overflow-icon" ng-src="images/android/ic_action_overflow.png">
         </li>
       </ul>
     </div>

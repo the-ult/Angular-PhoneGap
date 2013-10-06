@@ -12,38 +12,9 @@ body {
 **  ########################################################################################### **/
 /*
   TODO: create new semantic classes in stead of overriding bootstrap
-
 */
-
-.navbar {
-  min-height: 48px;
-  height: 48px;
-}
-
 .navbar-nav{
   margin: 0 !important;
-}
-
-.navbar-default {
-  background-color: inherit;
-  border-color: #E7E7E7;
-}
-
-.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #E7E7E7 !important;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.navbar-brand {
-  padding-left: 0px;
-}
-
-.nav > li {
-  display: inline-block !important;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: #ffffff;
 }
 
 /** ###########################################################################################
@@ -65,34 +36,66 @@ body {
 **  #   Main Action Bar / Navigation
 **  #   - Action bar is 48dp -> 48px. Fix with media queries
 **  ########################################################################################### **/
+
 #action-bar {
   background-color: #2980b9;
-  color: white;
+  color: #ffffff;
   border-bottom: 1px solid #34495e;
+  min-height: 48px;
+  height: 48px;
 }
 
-#action-bar .action-bar-icon {
+#action-bar .navbar-header {
+  width: 100%;
+  margin: auto;
+  position: absolute !important;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+
+}
+
+#action-bar li {
   color: #ffffff;
-  padding: 8px 0 8px 0;
+  /*padding: 8px 0 8px 0;*/
   line-height: 22px;
   text-decoration: none;
   text-shadow: none;
-  width: 40px;
   cursor: pointer;
 }
 
-#action-bar .action-bar-icon img {
+/*#action-bar .action-bar-icon {*/
+/*width: 40px;*/
+/*}*/
+
+#action-bar .app-icon {
   height: 32px;
   width: 32px;
 }
 
-#action-bar img.drawer-icon {
-  position: relative;
-  /*margin-top: 14px;*/
+#action-bar .drawer-icon {
   height: 20px;
   width: 20px;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);;
+}
+
+#action-bar .view-control {
+  margin-left: 10px;
+}
+
+#action-bar .action-button {
+
+}
+
+#action-bar .action-overflow {
+
+}
+
+#action-bar .action-overflow-icon {
+  height: 32px;
+  width: 32px;
 }
 
 /** ###########################################################################################
