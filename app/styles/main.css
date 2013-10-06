@@ -13,7 +13,7 @@ body {
 /*
   TODO: create new semantic classes in stead of overriding bootstrap
 */
-.navbar-nav{
+.navbar-nav {
   margin: 0 !important;
 }
 
@@ -24,6 +24,7 @@ body {
   padding: 0;
   color: #ffffff;
 }
+
 .no-radius {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -107,7 +108,7 @@ aside {
   color: #fff;
   /* Action Bar is 48px + 1px border */
   top: 48px;
-  bottom: 0px;
+  bottom: 0;
   z-index: 10;
   width: 240px;
 
