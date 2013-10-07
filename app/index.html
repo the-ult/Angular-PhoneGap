@@ -60,8 +60,8 @@
 
 <!-- Begin page content -->
 <section id="main">
-  <div class="overlay"
-       data-ng-class="{'animated fadeIn': main.showNavDrawer, 'animated fadeOut': !main.showNavDrawer}"></div>
+  <div data-ng-hide="!main.showNavDrawer" class="overlay"></div>
+
   <div class="page-header">
     <h1>Sticky footer with fixed navbar</h1>
   </div>

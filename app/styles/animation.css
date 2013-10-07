@@ -43,3 +43,95 @@
 /*-moz-animation: slideOutLeft 0.8s;*/
 /*-ms-animation: slideOutLeft 0.8s;*/
 /*}*/
+
+.overlay.ng-hide-add {
+  -webkit-animation: 0.5s hide;
+  -moz-animation: 0.5s hide;
+  -o-animation: 0.5s hide;
+  animation: 0.5s hide;
+}
+
+@keyframes hide {
+  from {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  to {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+@-webkit-keyframes hide {
+  from {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  to {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+@-moz-keyframes hide {
+  from {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  to {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+@-o-keyframes hide {
+  from {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  to {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+.overlay.ng-hide-remove {
+  -webkit-animation: 1s show;
+  -moz-animation: 1s show;
+  -o-animation: 1s show;
+  animation: 1s show;
+
+  /* remember, the .hg-hide class is already on
+     the element which renders it as display=none
+     so it must be overridden to render the "show"
+     animation */
+  display: block !important;
+}
+
+@keyframes show {
+  from {
+    background: rgba(0, 0, 0, 0);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@-webkit-keyframes show {
+  from {
+    background: rgba(0, 0, 0, 0);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@-moz-keyframes show {
+  from {
+    background: rgba(0, 0, 0, 0);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@-o-keyframes show {
+  from {
+    background: rgba(0, 0, 0, 0);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
