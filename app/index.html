@@ -52,8 +52,11 @@
 
 <!--Left  Navitgation Drawer -->
 <aside id="left-nav-drawer"
-       data-ng-class="{ 'animated fadeInLeftBig': main.showNavDrawer, 'animated fadeOutLeftBig': !main.showNavDrawer }">
-  <nav>
+       data-ng-class="{ 'animated fadeInLeftBig': main.showNavDrawer, 'animated fadeOutLeftBig': !main.showNavDrawer }"
+       data-ng-swipe-left="main.showNavDrawer = false"
+       data-ng-swipe-right="main.showNavDrawer = true"
+    >
+<nav>
     test
   </nav>
 </aside>
