@@ -20,13 +20,13 @@
     "bootstrap": "~3.0.0",
     "animate.css": "*",
     "flat-ui-official": "~2.1.0",
-    "angular-gestures": "~0.1.1"
+    "topcoat": "~0.7.5"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.0-rc.2",
     "angular-scenario": "~1.2.0-rc.2"
   },
   "resolutions": {
-    "angular": "1.2.0-rc.3"
+    "angular": "1.2.0"
   }
 }

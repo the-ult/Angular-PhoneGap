@@ -2,7 +2,8 @@
   "name": "phone",
   "version": "0.0.1",
   "dependencies": {
-    "grunt-pagespeed": "0.0.6"
+    "grunt-pagespeed": "0.0.6",
+    "karma-coverage": "~0.1.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

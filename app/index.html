@@ -8,9 +8,17 @@
   <meta name="viewport"
         content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-width, target-densitydpi=device-dpi">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
-  <link rel="stylesheet" href="bower_components/flat-ui-official/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="bower_components/flat-ui-official/css/flat-ui.css">
+  <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">-->
+  <!--<link rel="stylesheet" href="bower_components/flat-ui-official/bootstrap/css/bootstrap.css">-->
+  <!--<link rel="stylesheet" href="bower_components/flat-ui-official/css/flat-ui.css">-->
+
+  <!-- build:css(.tmp) styles/bootflat-extra.css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+  <link href="css/bootflat.css" rel="stylesheet" media="screen">
+  <link href="css/bootflat-extensions.css" rel="stylesheet" media="screen">
+  <link href="css/bootflat-square.css" rel="stylesheet" media="screen">
+  <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/animation.css">
@@ -19,8 +27,8 @@
 </head>
 <body data-ng-controller="MainCtrl as main">
 <header>
-  <nav id="action-bar" class="navbar navbar-default navbar-fixed-top no-radius">
-    <!-- Fixed navbar -->
+  <nav id="action-bar" class="navbar navbar-default navbar-fixed-top">
+  <!-- Fixed navbar -->
     <div class="navbar-header">
       <ul class="nav navbar-nav">
         <li>
@@ -52,18 +60,23 @@
 
 <!--Left  Navitgation Drawer -->
 <aside id="left-nav-drawer"
-       data-ng-class="{ 'animated fadeInLeftBig': main.showNavDrawer, 'animated fadeOutLeftBig': !main.showNavDrawer }"
+       data-ng-class="{ 'show-navigation-drawer': main.showNavDrawer }"
        data-ng-swipe-left="main.showNavDrawer = false"
        data-ng-swipe-right="main.showNavDrawer = true"
     >
   <nav>
-  test
+    test
+    <ul>
+      <li>Één</li>
+      <li>Twee</li>
+      <li>Drie</li>
+    </ul>
   </nav>
 </aside>
 
 <!-- Begin page content -->
 <section id="main">
-  <div data-ng-hide="!main.showNavDrawer" class="overlay"></div>
+  <div data-ng-show="main.showNavDrawer" class="overlay"></div>
 
   <div class="page-header">
     <h1>Sticky footer with fixed navbar</h1>
@@ -78,8 +91,8 @@
 <!--    Le Scripts                                                                                        -->
 <!-- ===================================================================================================  -->
 <!--<script src="bower_components/jquery/jquery.js"></script>-->
+<!-- build:js scripts/angular-modules.js -->
 <script src="bower_components/angular/angular.js"></script>
-<!-- build:js scripts/modules.js -->
 <script src="bower_components/angular-resource/angular-resource.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>

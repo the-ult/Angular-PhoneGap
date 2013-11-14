@@ -22,6 +22,29 @@
   transform: translate3d(-8px, 0, 0);
 }
 
+.show-navigation-drawer {
+  /*transform: translate3d(0, 0, 0) !important;*/
+  /*-webkit-transform: translate3d(0, 0, 0) !important;*/
+}
+
+aside#left-nav-drawer.show-navigation-drawer.ng-hide-add {
+  transform: translate3d(0, 0, 0) !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  animation: 0.8s fadeInLeft;
+  -webkit-animation: 0.8s fadeInLeft;
+  -moz-animation: 0.8s fadeInLeft;
+  -ms-animation: 0.8s fadeInLeft;
+}
+
+aside#left-nav-drawer.show-navigation-drawer.ng-hide-remove {
+  animation: 0.8s slideOutLeft;
+  -webkit-animation: 0.8s slideOutLeft;
+  -moz-animation: 0.8s slideOutLeft;
+  -ms-animation: 0.8s slideOutLeft;
+
+  display: block !important;
+}
+
 /* TODO for overlay
    Faster animation
 */
@@ -45,15 +68,15 @@
 /*}*/
 
 .overlay.ng-hide-add {
-  -webkit-animation: 0.5s hide;
-  -moz-animation: 0.5s hide;
-  -o-animation: 0.5s hide;
-  animation: 0.5s hide;
+  -webkit-animation: 0.2s hide;
+  -moz-animation: 0.2s hide;
+  -o-animation: 0.2s hide;
+  animation: 0.2s hide;
 }
 
 @keyframes hide {
   from {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
   }
   to {
     background: rgba(0, 0, 0, 0);
@@ -62,7 +85,7 @@
 
 @-webkit-keyframes hide {
   from {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
   }
   to {
     background: rgba(0, 0, 0, 0);
@@ -71,7 +94,7 @@
 
 @-moz-keyframes hide {
   from {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
   }
   to {
     background: rgba(0, 0, 0, 0);
@@ -80,7 +103,7 @@
 
 @-o-keyframes hide {
   from {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
   }
   to {
     background: rgba(0, 0, 0, 0);
@@ -88,10 +111,10 @@
 }
 
 .overlay.ng-hide-remove {
-  -webkit-animation: 1s show;
-  -moz-animation: 1s show;
-  -o-animation: 1s show;
-  animation: 1s show;
+  -webkit-animation: 0.2s show;
+  -moz-animation: 0.2s show;
+  -o-animation: 0.2s show;
+  animation: 0.2s show;
 
   /* remember, the .hg-hide class is already on
      the element which renders it as display=none
@@ -105,7 +128,7 @@
     background: rgba(0, 0, 0, 0);
   }
   to {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -114,7 +137,7 @@
     background: rgba(0, 0, 0, 0);
   }
   to {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -123,7 +146,7 @@
     background: rgba(0, 0, 0, 0);
   }
   to {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -132,6 +155,6 @@
     background: rgba(0, 0, 0, 0);
   }
   to {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
   }
 }

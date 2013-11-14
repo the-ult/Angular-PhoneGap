@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('phoneApp', ['ngRoute', 'ngAnimate', 'ngTouch', 'angular-gestures'])
+angular.module('phoneApp', ['ngRoute', 'ngAnimate', 'ngTouch'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
