@@ -18,8 +18,8 @@
 #action-bar img.drawer-slide-left,
 #action-bar img.drawer-slide-left-remove,
 #action-bar img.drawer-slide-left-add.drawer-slide-left-add-active {
-  -webkit-transform: translate3d(-8px, 0, 0);
-  transform: translate3d(-8px, 0, 0);
+  -webkit-transform: translate3d(-6px, 0, 0);
+  transform: translate3d(-6px, 0, 0);
 }
 
 .show-navigation-drawer {
@@ -30,17 +30,17 @@
 aside#left-nav-drawer.show-navigation-drawer.ng-hide-add {
   transform: translate3d(0, 0, 0) !important;
   -webkit-transform: translate3d(0, 0, 0) !important;
-  animation: 0.8s fadeInLeft;
-  -webkit-animation: 0.8s fadeInLeft;
-  -moz-animation: 0.8s fadeInLeft;
-  -ms-animation: 0.8s fadeInLeft;
+  animation: 0.4s fadeInLeft;
+  -webkit-animation: 0.4s fadeInLeft;
+  -moz-animation: 0.4s fadeInLeft;
+  -ms-animation: 0.4s fadeInLeft;
 }
 
 aside#left-nav-drawer.show-navigation-drawer.ng-hide-remove {
-  animation: 0.8s slideOutLeft;
-  -webkit-animation: 0.8s slideOutLeft;
-  -moz-animation: 0.8s slideOutLeft;
-  -ms-animation: 0.8s slideOutLeft;
+  animation: 0.4s slideOutLeft;
+  -webkit-animation: 0.4s slideOutLeft;
+  -moz-animation: 0.4s slideOutLeft;
+  -ms-animation: 0.4s slideOutLeft;
 
   display: block !important;
 }
@@ -68,10 +68,16 @@ aside#left-nav-drawer.show-navigation-drawer.ng-hide-remove {
 /*}*/
 
 .overlay.ng-hide-add {
-  -webkit-animation: 0.2s hide;
-  -moz-animation: 0.2s hide;
-  -o-animation: 0.2s hide;
-  animation: 0.2s hide;
+  -webkit-animation: 0.4s hide;
+  -moz-animation: 0.4s hide;
+  -o-animation: 0.4s hide;
+  animation: 0.4s hide;
+
+  /* remember, the .hg-hide class is already on
+   the element which renders it as display=none
+   so it must be overridden to render the "show"
+   animation */
+  display: block !important;
 }
 
 @keyframes hide {
@@ -111,16 +117,12 @@ aside#left-nav-drawer.show-navigation-drawer.ng-hide-remove {
 }
 
 .overlay.ng-hide-remove {
-  -webkit-animation: 0.2s show;
-  -moz-animation: 0.2s show;
-  -o-animation: 0.2s show;
-  animation: 0.2s show;
+  -webkit-animation: 0.4s show;
+  -moz-animation: 0.4s show;
+  -o-animation: 0.4s show;
+  animation: 0.4s show;
 
-  /* remember, the .hg-hide class is already on
-     the element which renders it as display=none
-     so it must be overridden to render the "show"
-     animation */
-  display: block !important;
+  /*display: block !important;*/
 }
 
 @keyframes show {
@@ -140,7 +142,6 @@ aside#left-nav-drawer.show-navigation-drawer.ng-hide-remove {
     background: rgba(0, 0, 0, 0.6);
   }
 }
-
 @-moz-keyframes show {
   from {
     background: rgba(0, 0, 0, 0);
