@@ -30,17 +30,18 @@
 aside#left-nav-drawer.show-navigation-drawer.ng-hide-add {
   transform: translate3d(0, 0, 0) !important;
   -webkit-transform: translate3d(0, 0, 0) !important;
-  animation: 0.4s fadeInLeft;
+
   -webkit-animation: 0.4s fadeInLeft;
   -moz-animation: 0.4s fadeInLeft;
   -ms-animation: 0.4s fadeInLeft;
+  animation: 0.4s fadeInLeft;
 }
 
 aside#left-nav-drawer.show-navigation-drawer.ng-hide-remove {
-  animation: 0.4s slideOutLeft;
   -webkit-animation: 0.4s slideOutLeft;
   -moz-animation: 0.4s slideOutLeft;
   -ms-animation: 0.4s slideOutLeft;
+  animation: 0.4s slideOutLeft;
 
   display: block !important;
 }
