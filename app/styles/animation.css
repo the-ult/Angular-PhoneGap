@@ -22,52 +22,38 @@
   transform: translate3d(-6px, 0, 0);
 }
 
+/** ###########################################################################################
+**  #   Navigation Drawer
+**  ########################################################################################### **/
 .show-navigation-drawer {
   /*transform: translate3d(0, 0, 0) !important;*/
   /*-webkit-transform: translate3d(0, 0, 0) !important;*/
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
 }
 
 aside#left-nav-drawer.show-navigation-drawer.ng-hide-add {
-  transform: translate3d(0, 0, 0) !important;
-  -webkit-transform: translate3d(0, 0, 0) !important;
+  /*transform: translate3d(0, 0, 0) !important;*/
+  /*-webkit-transform: translate3d(0, 0, 0) !important;*/
 
-  -webkit-animation: 0.4s fadeInLeft;
-  -moz-animation: 0.4s fadeInLeft;
-  -ms-animation: 0.4s fadeInLeft;
-  animation: 0.4s fadeInLeft;
-}
-
-aside#left-nav-drawer.show-navigation-drawer.ng-hide-remove {
   -webkit-animation: 0.4s slideOutLeft;
   -moz-animation: 0.4s slideOutLeft;
   -ms-animation: 0.4s slideOutLeft;
   animation: 0.4s slideOutLeft;
+}
+
+aside#left-nav-drawer.show-navigation-drawer.ng-hide-remove {
+  -webkit-animation: 0.4s fadeInLeft;
+  -moz-animation: 0.4s fadeInLeft;
+  -ms-animation: 0.4s fadeInLeft;
+  animation: 0.4s fadeInLeft;
 
   display: block !important;
 }
 
-/* TODO for overlay
-   Faster animation
-*/
-/*.slide-animation {*/
-/*width: 100%;*/
-/*position: absolute;*/
-/*}*/
-
-/*.slide-animation.ng-enter {*/
-/*animation: slideInRight 0.8s;*/
-/*-webkit-animation: slideInRight 0.8s;*/
-/*-moz-animation: slideInRight 0.8s;*/
-/*-ms-animation: slideInRight 0.8s;*/
-/*}*/
-
-/*.slide-animation.ng-leave {*/
-/*animation: slideOutLeft 0.8s;*/
-/*-webkit-animation: slideOutLeft 0.8s;*/
-/*-moz-animation: slideOutLeft 0.8s;*/
-/*-ms-animation: slideOutLeft 0.8s;*/
-/*}*/
-
+/** ###########################################################################################
+**  #   Overlay
+**  ########################################################################################### **/
 .overlay.ng-hide-add {
   -webkit-animation: 0.4s hide;
   -moz-animation: 0.4s hide;
