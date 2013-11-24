@@ -25,24 +25,13 @@
 /** ###########################################################################################
 **  #   Navigation Drawer
 **  ########################################################################################### **/
-.show-navigation-drawer {
-  /*transform: translate3d(0, 0, 0) !important;*/
-  /*-webkit-transform: translate3d(0, 0, 0) !important;*/
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
+aside#left-nav-drawer.show-navigation-drawer {
+  transform: translate3d(0, 0, 0) !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
 }
 
-aside#left-nav-drawer.show-navigation-drawer.ng-hide-add {
-  /*transform: translate3d(0, 0, 0) !important;*/
-  /*-webkit-transform: translate3d(0, 0, 0) !important;*/
+aside#left-nav-drawer.show-navigation-drawer-add {
 
-  -webkit-animation: 0.4s slideOutLeft;
-  -moz-animation: 0.4s slideOutLeft;
-  -ms-animation: 0.4s slideOutLeft;
-  animation: 0.4s slideOutLeft;
-}
-
-aside#left-nav-drawer.show-navigation-drawer.ng-hide-remove {
   -webkit-animation: 0.4s fadeInLeft;
   -moz-animation: 0.4s fadeInLeft;
   -ms-animation: 0.4s fadeInLeft;
@@ -51,14 +40,22 @@ aside#left-nav-drawer.show-navigation-drawer.ng-hide-remove {
   display: block !important;
 }
 
+aside#left-nav-drawer.show-navigation-drawer-remove {
+  -webkit-animation: 0.8s slideOutLeft;
+  -moz-animation: 0.4s slideOutLeft;
+  -ms-animation: 0.4s slideOutLeft;
+  animation: 0.4s slideOutLeft;
+
+}
+
 /** ###########################################################################################
 **  #   Overlay
 **  ########################################################################################### **/
 .overlay.ng-hide-add {
-  -webkit-animation: 0.4s hide;
-  -moz-animation: 0.4s hide;
-  -o-animation: 0.4s hide;
-  animation: 0.4s hide;
+  -webkit-animation: 0.3s hide;
+  -moz-animation: 0.3s hide;
+  -o-animation: 0.3s hide;
+  animation: 0.3s hide;
 
   /* remember, the .hg-hide class is already on
    the element which renders it as display=none
@@ -104,10 +101,10 @@ aside#left-nav-drawer.show-navigation-drawer.ng-hide-remove {
 }
 
 .overlay.ng-hide-remove {
-  -webkit-animation: 0.4s show;
-  -moz-animation: 0.4s show;
-  -o-animation: 0.4s show;
-  animation: 0.4s show;
+  -webkit-animation: 0.3s show;
+  -moz-animation: 0.3s show;
+  -o-animation: 0.3s show;
+  animation: 0.3s show;
 
   /*display: block !important;*/
 }
