@@ -4,8 +4,6 @@
   "dependencies": {
     "es5-shim": "~2.1.0",
     "angular-leaflet": "~0.6.0",
-    "jquery": "~2.0.2",
-    "jquery-migrate": "~1.2.0",
     "angular-ui-bootstrap-bower": "0.7.0",
     "angular-ui-utils": "~0.0.4",
     "angular": "~1.2.1",
@@ -18,10 +16,10 @@
     "angular-cookies": "~1.2.1",
     "angular-touch": "~1.2.1",
     "bootstrap": "~3.0.0",
-    "animate.css": "*",
+    "bootflat": "*",
+    "animate.css": "3.0.0",
     "flat-ui-official": "~2.1.0",
-    "topcoat": "~0.8.0",
-    "bootflat": "*"
+    "topcoat": "~0.8.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.1",
