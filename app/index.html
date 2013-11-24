@@ -28,8 +28,8 @@
     <!-- Fixed navbar -->
     <div class="navbar-header">
       <ul class="nav navbar-nav pull-left">
-        <li>
-          <img class="drawer-icon" ng-src="images/android/ic_drawer.png"
+        <li data-ng-click="main.showNavDrawer = !main.showNavDrawer">
+        <img class="drawer-icon" ng-src="images/android/ic_drawer.png"
                data-ng-class="{'drawer-slide-left':  main.showNavDrawer}">
         </li>
         <li data-ng-click="main.showNavDrawer = !main.showNavDrawer">

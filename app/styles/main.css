@@ -71,13 +71,25 @@ body {
 
 }
 
-#action-bar li {
+#action-bar ul {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  height: 48px;
+}
+
+#action-bar ul li {
   color: #ffffff;
   /*padding: 8px 0 8px 0;*/
-  line-height: 22px;
   text-decoration: none;
   text-shadow: none;
   cursor: pointer;
+  display: inline;
+  height: 100%;
+  line-height: 48px;
+}
+
+#action-bar ul li a {
+  line-height: 48px;
   display: inline-block;
 }
 
