@@ -6,27 +6,25 @@
     "angular-leaflet": "~0.6.0",
     "jquery": "~2.0.2",
     "jquery-migrate": "~1.2.0",
-    "angular-ui-bootstrap-bower": "0.6.0",
+    "angular-ui-bootstrap-bower": "0.7.0",
     "angular-ui-utils": "~0.0.4",
-    "angular": "~1.2.0-rc.2",
-    "angular-animate": "~1.2.0-rc.2",
-    "angular-route": "~1.2.0-rc.2",
-    "angular-resource": "~1.2.0-rc.2",
-    "angular-sanitize": "~1.2.0-rc.2",
-    "angular-scenario": "~1.2.0-rc.2",
-    "angular-loader": "~1.2.0-rc.2",
-    "angular-cookies": "~1.2.0-rc.2",
-    "angular-touch": "~1.2.0-rc.2",
+    "angular": "~1.2.1",
+    "angular-animate": "1.2.2",
+    "angular-route": "~1.2.1",
+    "angular-resource": "~1.2.1",
+    "angular-sanitize": "~1.2.1",
+    "angular-scenario": "~1.2.1",
+    "angular-loader": "~1.2.1",
+    "angular-cookies": "~1.2.1",
+    "angular-touch": "~1.2.1",
     "bootstrap": "~3.0.0",
     "animate.css": "*",
     "flat-ui-official": "~2.1.0",
-    "topcoat": "~0.7.5"
+    "topcoat": "~0.8.0",
+    "bootflat": "*"
   },
   "devDependencies": {
-    "angular-mocks": "~1.2.0-rc.2",
-    "angular-scenario": "~1.2.0-rc.2"
-  },
-  "resolutions": {
-    "angular": "1.2.0"
+    "angular-mocks": "~1.2.1",
+    "angular-scenario": "~1.2.1"
   }
 }
