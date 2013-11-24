@@ -32,19 +32,19 @@ aside#left-nav-drawer.show-navigation-drawer {
 
 aside#left-nav-drawer.show-navigation-drawer-add {
 
-  -webkit-animation: 0.4s fadeInLeft;
-  -moz-animation: 0.4s fadeInLeft;
-  -ms-animation: 0.4s fadeInLeft;
-  animation: 0.4s fadeInLeft;
+  -webkit-animation: 0.4s slideInLeft;
+  -moz-animation: 0.4s slideInLeft;
+  -ms-animation: 0.4s slideInLeft;
+  animation: 0.4s slideInLeft;
 
   display: block !important;
 }
 
 aside#left-nav-drawer.show-navigation-drawer-remove {
-  -webkit-animation: 0.8s slideOutLeft;
-  -moz-animation: 0.4s slideOutLeft;
-  -ms-animation: 0.4s slideOutLeft;
-  animation: 0.4s slideOutLeft;
+  -webkit-animation: 0.6s slideOutLeft;
+  -moz-animation: 0.6s slideOutLeft;
+  -ms-animation: 0.6s slideOutLeft;
+  animation: 0.6s slideOutLeft;
 
 }
 
