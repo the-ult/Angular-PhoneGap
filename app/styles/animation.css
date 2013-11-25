@@ -45,6 +45,7 @@ aside#left-nav-drawer.show-navigation-drawer-remove {
   -moz-animation: 0.6s slideOutLeft;
   -ms-animation: 0.6s slideOutLeft;
   animation: 0.6s slideOutLeft;
+  display: block !important;
 
 }
 
@@ -52,10 +53,10 @@ aside#left-nav-drawer.show-navigation-drawer-remove {
 **  #   Overlay
 **  ########################################################################################### **/
 .overlay.ng-hide-add {
-  -webkit-animation: 0.3s hide;
-  -moz-animation: 0.3s hide;
-  -o-animation: 0.3s hide;
-  animation: 0.3s hide;
+  -webkit-animation: 0.6s hide;
+  -moz-animation: 0.6s hide;
+  -o-animation: 0.6s hide;
+  animation: 0.6s hide;
 
   /* remember, the .hg-hide class is already on
    the element which renders it as display=none
@@ -101,10 +102,10 @@ aside#left-nav-drawer.show-navigation-drawer-remove {
 }
 
 .overlay.ng-hide-remove {
-  -webkit-animation: 0.3s show;
-  -moz-animation: 0.3s show;
-  -o-animation: 0.3s show;
-  animation: 0.3s show;
+  -webkit-animation: 0.6s show;
+  -moz-animation: 0.6s show;
+  -o-animation: 0.6s show;
+  animation: 0.6s show;
 
   /*display: block !important;*/
 }
